@@ -16,13 +16,14 @@ const App = () => {
         setUsers(users.map(user => {
             if (user._id === id) {
 
-                if (!user.bookmark) {
-                    user.bookmark = true;
-
-                } else {
-                    user.bookmark = false;
-
-                }
+                // if (!user.bookmark) {
+                //     user.bookmark = true;
+                //
+                // } else {
+                //     user.bookmark = false;
+                //
+                // }
+               user.bookmark = !user.bookmark
             }
 
             return user;
